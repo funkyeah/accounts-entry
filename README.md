@@ -7,6 +7,15 @@ version: 1.0.2
 
 ---
 
+Fork Integrates:
+https://github.com/Differential/accounts-entry/pull/338
+https://github.com/Differential/accounts-entry/pull/325
+fromWhere of: https://github.com/Differential/accounts-entry/pull/300
+
+Think about:
+https://github.com/Differential/accounts-entry/issues/302
+https://github.com/Differential/accounts-entry/pull/335
+
 **NOTE:** Version 0.8.0 and higher or accounts-entry requires that you use Meteor 0.8.2 or higher. You also need to pass the pause param to AccountsEntry.signedInRequired if you are using it. If you were using master and extraSignUpFields, please review the docs for changes in the 0.8.0 release.
 
 # accounts-entry
@@ -59,8 +68,7 @@ You will get routes and the necessary templates for:
 /forgot-password
 ```
 
-{% assign special = '{{> accountButtons}}' %}
-You can then either add links to those directly, or use the `{{ special }}` helper we provide to give you the apppropriate links for signed-in/signed-out users.  The `{{ special }}` helper will display a sign-out link and the user's email address when they are signed-in.
+You can then either add links to those directly, or use the ```{{> accountButtons}}``` helper we provide to give you the apppropriate links for signed-in/signed-out users.  The ```{{> accountButtons}}``` helper will display a sign-out link and the user's email address when they are signed-in.
 
 ## Ensuring signed in users for routes
 
@@ -84,8 +92,7 @@ Use `mrt add accounts-password` if you want to have email/username login authent
 
 ## Setting up OAuth/social integrations
 
-{% assign loginButtons = '{{> loginButtons}}' %}
-Use `accounts-ui` to configure your social/OAuth integrations (or manually create records in your database, if you have those skills). We don't have the nice instructions on how to configure the services built into this package, but if you choose to use <code>{{ loginButtons }}</code> elsewhere in your application (even temporarily), you can configure OAuth logins there.
+Use `accounts-ui` to configure your social/OAuth integrations (or manually create records in your database, if you have those skills). We don't have the nice instructions on how to configure the services built into this package, but if you choose to use <code>```{{> loginButtons}}```</code> elsewhere in your application (even temporarily), you can configure OAuth logins there.
 
 ## Configuration
 
@@ -111,6 +118,8 @@ Since this is a young package, we are maintaining compatibility with accounts-ui
       passwordSignupFields: 'EMAIL_ONLY'
       showSignupCode: true
       showOtherLoginServices: true      // Set to false to hide oauth login buttons on the signin/signup pages. Useful if you are using something like accounts-meld or want to oauth for api access
+      fromWhere:false                     // ?? 
+      requirePasswordConfirmation: false  // ??
       extraSignUpFields: [{             // Add extra signup fields on the signup page
         field: "name",                           // The database property you want to store the data in
         name: "This Will Be The Initial Value",  // An initial value for the field, if you want one

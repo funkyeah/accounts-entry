@@ -70,6 +70,7 @@ Router.map ->
     onBeforeAction: ()->
       Session.set('entryError', undefined)
       if AccountsEntry.settings.homeRoute
+        @render("loading")
         Meteor.logout () ->
           Router.go AccountsEntry.settings.homeRoute
       @next()

@@ -1,14 +1,17 @@
 AccountsEntry =
   settings:
     wrapLinks: true
-    homeRoute: '/home'
+    homeRoute: '/'
     dashboardRoute: '/dashboard'
     passwordSignupFields: 'EMAIL_ONLY'
     emailToLower: true
     usernameToLower: false
     entrySignUp: '/sign-up'
+    entrySignOut: '/sign-out'
     extraSignUpFields: []
     showOtherLoginServices: true
+    fromWhere:false
+    requirePasswordConfirmation: false
 
   isStringEmail: (email) ->
     emailPattern = /^([\w.-]+)@([\w.-]+)\.([a-zA-Z.]{2,6})$/i
