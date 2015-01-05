@@ -1,7 +1,7 @@
 Package.describe({
     summary: "Make signin and signout their own pages with routes.",
     version: '1.0.3',
-    // name: "joshowens:accounts-entry",
+    name: "funkyeah:accounts-entry",
     githubUrl: 'https://github.com/funkyeah/accounts-entry'
 });
 
