@@ -1,12 +1,18 @@
 ---
 layout: default
-username: Differential
+username: funkyeah
 repo: accounts-entry
 desc: Meteor sign up and sign in pages.
-version: 0.8.0
+version: 1.0.4
 
 ---
 # Changelog
+
+### 1.0.4
+Fork Integrates:
+https://github.com/Differential/accounts-entry/pull/338
+https://github.com/Differential/accounts-entry/pull/325
+fromWhere of: https://github.com/Differential/accounts-entry/pull/300
 
 ### 0.8.0
 

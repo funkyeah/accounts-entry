@@ -3,20 +3,9 @@ layout: default
 username: Differential
 repo: accounts-entry
 desc: Meteor sign up and sign in pages.
-version: 1.0.2
+version: 1.0.4
 
 ---
-
-Fork Integrates:
-https://github.com/Differential/accounts-entry/pull/338
-https://github.com/Differential/accounts-entry/pull/325
-fromWhere of: https://github.com/Differential/accounts-entry/pull/300
-
-Think about:
-https://github.com/Differential/accounts-entry/issues/302
-https://github.com/Differential/accounts-entry/pull/335
-
-**NOTE:** Version 0.8.0 and higher or accounts-entry requires that you use Meteor 0.8.2 or higher. You also need to pass the pause param to AccountsEntry.signedInRequired if you are using it. If you were using master and extraSignUpFields, please review the docs for changes in the 0.8.0 release.
 
 # accounts-entry
 
