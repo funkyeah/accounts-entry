@@ -7,6 +7,11 @@ version: 1.0.4
 
 ---
 # Changelog
+### Future 1.0.5
+
+Consider https://github.com/Differential/accounts-entry/pull/296
+
+
 
 ### 1.0.4
 Fork Integrates:

@@ -3,18 +3,14 @@
     {{> signedInTemplate}}
   {{else}}
 
-    {{#wrapLinksLi}}
+    <li class="{{ isActiveRoute regex='sign-in'}}">
       <a href="{{pathFor 'entrySignIn'}}">{{{beforeSignIn}}}{{t9n "signIn"}}</a>
-    {{/wrapLinksLi}}
-
-    {{#unless wrapLinks}}
-      <span>or</span>
-    {{/unless}}
+    </li>
 
     {{#if showCreateAccountLink}}
-      {{#wrapLinksLi}}
+      <li class="{{ isActiveRoute regex='sign-up'}}">
         <a href="{{entrySignUp}}">{{{beforeSignUp}}}{{t9n "signUp"}}</a>
-      {{/wrapLinksLi}}
+      </li>
     {{/if}}
   {{/if}}
 </template>

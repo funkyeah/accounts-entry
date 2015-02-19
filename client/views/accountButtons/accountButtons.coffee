@@ -1,8 +1,8 @@
 entryAccountButtonsHelpers = {
   profileUrl: ->
     return false unless AccountsEntry.settings.profileRoute
-    AccountsEntry.settings.profileRoute
-
+    user = Meteor.user()
+    return '/users/' + user.username
 
   wrapLinksLi: ->
     if AccountsEntry.settings.wrapLinks
